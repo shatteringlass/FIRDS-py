@@ -1,0 +1,2 @@
+class Firds(object):
+	pass
