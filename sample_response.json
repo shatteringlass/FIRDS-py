@@ -1,0 +1,361 @@
+{
+    "response": {
+        "docs": [
+            {
+                "_root_": 9938,
+                "_version_": 1615364248955781121,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_D_20180825_01of04.zip",
+                "file_name": "FULINS_D_20180825_01of04.zip",
+                "file_type": "FULINS",
+                "id": "9938",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9938",
+                "timestamp": "2018-10-26T05:23:15.87Z"
+            },
+            {
+                "_root_": 9939,
+                "_version_": 1615364248955781122,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_D_20180825_02of04.zip",
+                "file_name": "FULINS_D_20180825_02of04.zip",
+                "file_type": "FULINS",
+                "id": "9939",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9939",
+                "timestamp": "2018-10-26T05:23:15.87Z"
+            },
+            {
+                "_root_": 9940,
+                "_version_": 1615364248955781123,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_D_20180825_03of04.zip",
+                "file_name": "FULINS_D_20180825_03of04.zip",
+                "file_type": "FULINS",
+                "id": "9940",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9940",
+                "timestamp": "2018-10-26T05:23:15.87Z"
+            },
+            {
+                "_root_": 9941,
+                "_version_": 1615364248955781124,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_D_20180825_04of04.zip",
+                "file_name": "FULINS_D_20180825_04of04.zip",
+                "file_type": "FULINS",
+                "id": "9941",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9941",
+                "timestamp": "2018-10-26T05:23:15.87Z"
+            },
+            {
+                "_root_": 9942,
+                "_version_": 1615364248955781125,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_E_20180825_01of02.zip",
+                "file_name": "FULINS_E_20180825_01of02.zip",
+                "file_type": "FULINS",
+                "id": "9942",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9942",
+                "timestamp": "2018-10-26T05:23:15.87Z"
+            },
+            {
+                "_root_": 9943,
+                "_version_": 1615364248956829696,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_E_20180825_02of02.zip",
+                "file_name": "FULINS_E_20180825_02of02.zip",
+                "file_type": "FULINS",
+                "id": "9943",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9943",
+                "timestamp": "2018-10-26T05:23:15.871Z"
+            },
+            {
+                "_root_": 9944,
+                "_version_": 1615364248956829697,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_F_20180825_01of01.zip",
+                "file_name": "FULINS_F_20180825_01of01.zip",
+                "file_type": "FULINS",
+                "id": "9944",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9944",
+                "timestamp": "2018-10-26T05:23:15.871Z"
+            },
+            {
+                "_root_": 9945,
+                "_version_": 1615364248956829698,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_H_20180825_01of02.zip",
+                "file_name": "FULINS_H_20180825_01of02.zip",
+                "file_type": "FULINS",
+                "id": "9945",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9945",
+                "timestamp": "2018-10-26T05:23:15.871Z"
+            },
+            {
+                "_root_": 9946,
+                "_version_": 1615364248956829699,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_H_20180825_02of02.zip",
+                "file_name": "FULINS_H_20180825_02of02.zip",
+                "file_type": "FULINS",
+                "id": "9946",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9946",
+                "timestamp": "2018-10-26T05:23:15.871Z"
+            },
+            {
+                "_root_": 9947,
+                "_version_": 1615364248956829700,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_I_20180825_01of01.zip",
+                "file_name": "FULINS_I_20180825_01of01.zip",
+                "file_type": "FULINS",
+                "id": "9947",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9947",
+                "timestamp": "2018-10-26T05:23:15.871Z"
+            },
+            {
+                "_root_": 9948,
+                "_version_": 1615364248956829701,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_J_20180825_01of02.zip",
+                "file_name": "FULINS_J_20180825_01of02.zip",
+                "file_type": "FULINS",
+                "id": "9948",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9948",
+                "timestamp": "2018-10-26T05:23:15.871Z"
+            },
+            {
+                "_root_": 9949,
+                "_version_": 1615364248957878272,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_J_20180825_02of02.zip",
+                "file_name": "FULINS_J_20180825_02of02.zip",
+                "file_type": "FULINS",
+                "id": "9949",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9949",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9950,
+                "_version_": 1615364248957878273,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_O_20180825_01of02.zip",
+                "file_name": "FULINS_O_20180825_01of02.zip",
+                "file_type": "FULINS",
+                "id": "9950",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9950",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9951,
+                "_version_": 1615364248957878274,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_O_20180825_02of02.zip",
+                "file_name": "FULINS_O_20180825_02of02.zip",
+                "file_type": "FULINS",
+                "id": "9951",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9951",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9952,
+                "_version_": 1615364248957878275,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_01of10.zip",
+                "file_name": "FULINS_R_20180825_01of10.zip",
+                "file_type": "FULINS",
+                "id": "9952",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9952",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9953,
+                "_version_": 1615364248957878276,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_02of10.zip",
+                "file_name": "FULINS_R_20180825_02of10.zip",
+                "file_type": "FULINS",
+                "id": "9953",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9953",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9954,
+                "_version_": 1615364248957878277,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_03of10.zip",
+                "file_name": "FULINS_R_20180825_03of10.zip",
+                "file_type": "FULINS",
+                "id": "9954",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9954",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9955,
+                "_version_": 1615364248957878278,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_04of10.zip",
+                "file_name": "FULINS_R_20180825_04of10.zip",
+                "file_type": "FULINS",
+                "id": "9955",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9955",
+                "timestamp": "2018-10-26T05:23:15.872Z"
+            },
+            {
+                "_root_": 9956,
+                "_version_": 1615364248958926848,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_05of10.zip",
+                "file_name": "FULINS_R_20180825_05of10.zip",
+                "file_type": "FULINS",
+                "id": "9956",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9956",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9957,
+                "_version_": 1615364248958926849,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_06of10.zip",
+                "file_name": "FULINS_R_20180825_06of10.zip",
+                "file_type": "FULINS",
+                "id": "9957",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9957",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9958,
+                "_version_": 1615364248958926850,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_07of10.zip",
+                "file_name": "FULINS_R_20180825_07of10.zip",
+                "file_type": "FULINS",
+                "id": "9958",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9958",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9959,
+                "_version_": 1615364248958926851,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_08of10.zip",
+                "file_name": "FULINS_R_20180825_08of10.zip",
+                "file_type": "FULINS",
+                "id": "9959",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9959",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9960,
+                "_version_": 1615364248958926852,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_09of10.zip",
+                "file_name": "FULINS_R_20180825_09of10.zip",
+                "file_type": "FULINS",
+                "id": "9960",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9960",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9961,
+                "_version_": 1615364248958926853,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_R_20180825_10of10.zip",
+                "file_name": "FULINS_R_20180825_10of10.zip",
+                "file_type": "FULINS",
+                "id": "9961",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9961",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9962,
+                "_version_": 1615364248958926854,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_S_20180825_01of04.zip",
+                "file_name": "FULINS_S_20180825_01of04.zip",
+                "file_type": "FULINS",
+                "id": "9962",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9962",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9963,
+                "_version_": 1615364248958926855,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_S_20180825_02of04.zip",
+                "file_name": "FULINS_S_20180825_02of04.zip",
+                "file_type": "FULINS",
+                "id": "9963",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9963",
+                "timestamp": "2018-10-26T05:23:15.873Z"
+            },
+            {
+                "_root_": 9937,
+                "_version_": 1615364248974655492,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_C_20180825_01of01.zip",
+                "file_name": "FULINS_C_20180825_01of01.zip",
+                "file_type": "FULINS",
+                "id": "9937",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9937",
+                "timestamp": "2018-10-26T05:23:15.888Z"
+            },
+            {
+                "_root_": 9964,
+                "_version_": 1615364248975704067,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_S_20180825_03of04.zip",
+                "file_name": "FULINS_S_20180825_03of04.zip",
+                "file_type": "FULINS",
+                "id": "9964",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9964",
+                "timestamp": "2018-10-26T05:23:15.889Z"
+            },
+            {
+                "_root_": 9965,
+                "_version_": 1615364248975704068,
+                "download_link": "http://firds.esma.europa.eu/firds/FULINS_S_20180825_04of04.zip",
+                "file_name": "FULINS_S_20180825_04of04.zip",
+                "file_type": "FULINS",
+                "id": "9965",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9965",
+                "timestamp": "2018-10-26T05:23:15.889Z"
+            },
+            {
+                "_root_": 9968,
+                "_version_": 1615364248975704069,
+                "download_link": "http://firds.esma.europa.eu/firds/DLTINS_20180825_01of02.zip",
+                "file_name": "DLTINS_20180825_01of02.zip",
+                "file_type": "DLTINS",
+                "id": "9968",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9968",
+                "timestamp": "2018-10-26T05:23:15.889Z"
+            },
+            {
+                "_root_": 9969,
+                "_version_": 1615364248976752640,
+                "download_link": "http://firds.esma.europa.eu/firds/DLTINS_20180825_02of02.zip",
+                "file_name": "DLTINS_20180825_02of02.zip",
+                "file_type": "DLTINS",
+                "id": "9969",
+                "publication_date": "2018-08-25T00:00:00Z",
+                "published_instrument_file_id": "9969",
+                "timestamp": "2018-10-26T05:23:15.89Z"
+            }
+        ],
+        "numFound": 31,
+        "start": 0
+    },
+    "responseHeader": {
+        "QTime": 0,
+        "params": {
+            "fq": "publication_date:[2018-08-25T00:00:00Z TO 2018-08-25T23:59:59Z]",
+            "indent": "true",
+            "q": "*",
+            "rows": "100",
+            "start": "0",
+            "wt": "json"
+        },
+        "status": 0
+    }
+}

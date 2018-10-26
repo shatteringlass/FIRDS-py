@@ -9,11 +9,16 @@ ISOfmt = "%Y-%m-%dT%H:%M:%SZ"
 
 
 def main():
+    # cutoff
+    # dest
+    # prods
+
     parser = argparse.ArgumentParser(
         description='This tool queries ESMA FIRDS system to obtain available financial instrument data. If no argument is provided, the tool downloads to the current working directory any file made available on the platform no earlier than the last run date (provided that a lastrun file containing such timestamp is present alongside this tool).')
     parser.add_argument('--cutoff', type=str,
                         help='Earliest data publication date to be searched, in ISO8601 format and Zulu time - i.e. YYYY-MM-DDTHH:MM:SSZ')
-    parser.add_argument('--dest', type=str, default='./', help='Destination folder for downloaded data.')
+    parser.add_argument('--dest', type=str, default='./',
+                        help='Destination folder for downloaded data.')
     parser.add_argument('--prods', type=str, nargs='*',
                         help='The CFI initial letter for each product category to be downloaded (C D E F H I J K L M O R S T)',
                         default='C D E F H I J K L M O R S T')
@@ -87,7 +92,6 @@ def getList(lastRun, prods, startRow, maxRows):
 
     FUL = [x for x in body if x['file_type'] == 'FULINS']
 
-
     ls = []
 
     newestFUL = None
@@ -100,9 +104,11 @@ def getList(lastRun, prods, startRow, maxRows):
             except(ValueError):
                 p_newestFUL = lastRun
             newestFUL = p_newestFUL if not newestFUL or p_newestFUL > newestFUL else newestFUL
-            ls.append([f for f in p_prods if datetime.strptime(f['publication_date'], ISOfmt) == p_newestFUL])
+            ls.append([f for f in p_prods if datetime.strptime(
+                f['publication_date'], ISOfmt) == p_newestFUL])
 
-    DLT = [x for x in body if x['file_type'] == 'DLTINS' and isNewerThan(x, newestFUL)]
+    DLT = [x for x in body if x['file_type'] ==
+           'DLTINS' and isNewerThan(x, newestFUL)]
     ls.append(DLT)
     newestDLT = get_newest(DLT)
     return ls, newestFUL, newestDLT
@@ -117,6 +123,7 @@ def downloadLinks(list, destPath):
         for file in sublist:
             link = file['download_link']
             downloadZip(link, destPath + getFilename(link))
+
 
 def hasProduct(r, p):
     return r['file_name'].find('_{}_'.format(p)) != -1
