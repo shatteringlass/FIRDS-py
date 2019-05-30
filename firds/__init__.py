@@ -1,4 +1,4 @@
-from firds import Firds
+from firds.firds import Firds
 
 
 __title__ = "firds-py"

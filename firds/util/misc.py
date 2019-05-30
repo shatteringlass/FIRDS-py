@@ -1,4 +1,4 @@
-from funcutils import wraps
+from functools import wraps
 from requests import ConnectionError
 from socket import gaierror
 from time import sleep
