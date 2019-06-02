@@ -15,12 +15,7 @@ logger.setLevel(logging.DEBUG)
 
 def main():
     f = Firds()
-    #f.get_full_instrument_lists()
-    #f.get_delta_instrument_lists()
-    lst = f.get_list("2019-05-16T00:00:00Z","2019-05-30T23:59:59Z")
-    json.dump(lst,fp=sys.stdout,indent=True)
-    #get_specific_product(product=['C', 'F'])
-    #print(json.dumps(lst,indent=True))
+    json.dump(f.links, fp=sys.stdout, indent=True)
 
 
 if __name__ == '__main__':
