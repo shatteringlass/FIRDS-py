@@ -1,5 +1,6 @@
 import datetime
 import enum
+import json
 import jsonpath_rw
 import os
 import re
@@ -25,7 +26,41 @@ class CFI(enum.Enum):
     OTHERS = 'M'
 
 
-class Firds:
+class FirdsQuery:
+
+    search_endpoint = 'https://registers.esma.europa.eu/publication/searchRegister/doMainSearch'
+
+    headers = {
+        'Origin': 'https://registers.esma.europa.eu',
+        'Referer': 'https://registers.esma.europa.eu/publication/searchRegister?core=esma_registers_firds',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json, text/javascript, */*; q=0.01',
+        'X-Requested-With': 'XMLHttpRequest',
+        'Connection': 'keep-alive',
+    }
+
+    def build_query(self, start=0, criteria=list()):
+        return json.dumps({
+            "core": "esma_registers_firds",
+            "pagingSize": "1000",
+            "start": start,
+            "keyword": "",
+            "sortField": "isin asc",
+            "criteria": criteria,
+            "wt": "json"
+        })
+
+    def get(self, criteria):
+        query = self.build_query(criteria=criteria)
+        return requests.post(self.search_endpoint,
+                             headers=self.headers,
+                             data=query
+                             ).json()
+
+
+class FirdsDB:
 
     URL = 'https://registers.esma.europa.eu/solr/esma_registers_firds_files/select'
     today = datetime.date.today()
@@ -33,7 +68,6 @@ class Firds:
     bmnight = datetime.datetime.max.time()
     utc_tz = datetime.timezone.utc
     today_ts = datetime.datetime.combine(today, bmnight, utc_tz)
-    tmpfolder = tempfile.TemporaryDirectory()
 
     def __init__(self, date=today_ts, session=None, retry_count=1, retry_delay=0, proxies=None):
         if session is None:
@@ -46,6 +80,7 @@ class Firds:
         self.end_date = self.zulu_dt(self.today_ts)
         self._links = self.get_list(
             dt_from=self.start_date, dt_to=self.end_date)
+        self.tmpfolder = tempfile.TemporaryDirectory()
 
     @classmethod
     def zulu_dt(cls, dt):
@@ -113,32 +148,40 @@ class Firds:
 
         return lst
 
-    def get_zip(self, link, dest):
+    def get_zip(self, link):
+
+        def get_filename_from_cd(r):
+            """
+            Get filename from content-disposition
+            """
+            cd = r.headers.get('content-disposition')
+            if not cd:
+                return None
+            fname = re.findall('filename=(.+)', cd)
+            if len(fname) == 0:
+                return None
+            return fname[0]
+
         response = requests.get(link, stream=True)
+        fname = get_filename_from_cd(response) or link.rsplit('/', 1)[1]
         # Throw an error for bad status codes
         response.raise_for_status()
 
         # Write chunks to file
-        with open(os.path.join(self.tmpfolder, dest), 'wb') as handle:
+        path = os.path.join(self.tmpfolder.name, fname)
+        with open(path, 'wb') as handle:
             for block in response.iter_content(1024):
                 handle.write(block)
-            return handle
+        return path
+
+    def download_delta(self):
+        for l in self.links['DLTINS']:
+            print(self.get_zip(l))
+
+    def download_all(self):
+        pass
+        self.download_delta()
 
     @property
     def links(self):
         return self._links
-
-
-"""
-
-    def hasProduct(r, p):
-        return r['file_name'].find('_{}_'.format(p)) != -1
-
-    def isNewerThan(r, dt):
-        return datetime.strptime(r['publication_date'], ISOfmt) > dt
-
-    def getFilename(link):
-        return link[link.rfind("/") + 1:]
-
-
-"""
