@@ -28,7 +28,7 @@ class CFI(enum.Enum):
 
 class FirdsEntry:
 
-    __slots__ = ["_root_", "_version_", "collectorpaRent", "drv_delivery_type", "drv_expiry_date",
+    __slots__ = ["_root_", "_version_", "drv_delivery_type", "drv_expiry_date",
                  "drv_price_multiplier", "drv_sp_prc_value_sign_flag", "drvcmd_base_product", "drvcmd_final_price_type",
                  "drvcmd_sub_product", "drvcmd_transaction_type", "gnr_cfi_code", "gnr_comm_derivative_flag",
                  "gnr_full_name", "gnr_notional_curr_code", "gnr_short_name", "id", "isin", "latest_received_flag",
@@ -38,7 +38,11 @@ class FirdsEntry:
 
     def __init__(self, *args, **kwargs):
         for field in self.__slots__:
-            self.setattr(field, kwargs.get(field))
+            setattr(self, field, kwargs.get(field))
+
+    def __str__(self):
+        return  f'FirdsEntry({", ".join([f"{s}={getattr(self,s)}" for s in self.__slots__])})'
+
 
 
 class FirdsQuery:
@@ -79,13 +83,21 @@ class FirdsQuery:
         }
 
     def get(self, criteria):
-        f = [dict(name=k, value=v, type="text") for k, v in criteria.items()]
+        f = [dict(name=k, value=v, type="text", isParent="true")
+             for k, v in criteria.items()]
         query = json.dumps(self.build_query(criteria=f))
         endpoint = self.URL+self.search_register+self.search_endpoint
-        return requests.post(endpoint,
-                             headers=self.headers,
-                             json=query
-                             ).json()
+        jpath = jsonpath_rw.parse("response.docs[*]")
+        response = requests.post(endpoint,
+                                 headers=self.headers,
+                                 data=query
+                                 )
+        try:
+            response.raise_for_status()
+        except:
+            raise
+        else:
+            return [FirdsEntry(**x.value) for x in jpath.find(response.json())]
 
 
 class FirdsDB:
