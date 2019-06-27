@@ -41,8 +41,7 @@ class FirdsEntry:
             setattr(self, field, kwargs.get(field))
 
     def __str__(self):
-        return  f'FirdsEntry({", ".join([f"{s}={getattr(self,s)}" for s in self.__slots__])})'
-
+        return f'FirdsEntry({", ".join([f"{s}={getattr(self,s)}" for s in self.__slots__])})'
 
 
 class FirdsQuery:
@@ -98,6 +97,10 @@ class FirdsQuery:
             raise
         else:
             return [FirdsEntry(**x.value) for x in jpath.find(response.json())]
+
+
+class FirdsFile:
+    pass
 
 
 class FirdsDB:
